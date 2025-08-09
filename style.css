@@ -1,0 +1,72 @@
+/* Page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, #d6c9f7, #a0d8f1);
+    overflow: hidden;
+}
+
+/* Heading */
+h1 {
+    color: #8b0e35;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.show-btn {
+    background: #8b0e35;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.show-btn:hover {
+    background: #a21a46;
+}
+
+/* Photo styling */
+.photo-container {
+    display: inline-block;
+    background: black;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+    margin-top: 20px;
+}
+.photo-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Falling emojis animation */
+.falling-emojis span {
+    position: fixed;
+    top: -50px;
+    font-size: 24px;
+    animation: fall 10s linear infinite;
+}
+
+.falling-emojis span:nth-child(1) { left: 5%; animation-delay: 0s; }
+.falling-emojis span:nth-child(2) { left: 20%; animation-delay: 2s; }
+.falling-emojis span:nth-child(3) { left: 35%; animation-delay: 4s; }
+.falling-emojis span:nth-child(4) { left: 50%; animation-delay: 1s; }
+.falling-emojis span:nth-child(5) { left: 65%; animation-delay: 3s; }
+.falling-emojis span:nth-child(6) { left: 80%; animation-delay: 5s; }
+.falling-emojis span:nth-child(7) { left: 90%; animation-delay: 6s; }
+.falling-emojis span:nth-child(8) { left: 15%; animation-delay: 7s; }
+
+@keyframes fall {
+    0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
