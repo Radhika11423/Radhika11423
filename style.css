@@ -49,6 +49,9 @@ h1 {
     border-radius: 10px;
 }
 
+#photo-box{
+    margin-right: 200px;
+}
 /* Falling emojis animation */
 .falling-emojis span {
     position: fixed;
